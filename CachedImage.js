@@ -99,9 +99,9 @@ class CachedImage extends React.Component {
         this.addOrRemoveNetInfoListener()
     }
 
-    componentWillReceiveProps(nextProps) {
-        if (!_.isEqual(this.props.source, nextProps.source)) {
-            this.processSource(nextProps.source);
+    componentDidUpdate(prevProps) {
+        if (!_.isEqual(prevProps.source, this.props.source)) {
+            this.processSource(this.props.source);
         }
     }
 
