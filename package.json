@@ -1,6 +1,6 @@
 {
   "name": "react-native-cached-image-blob",
-  "version": "2.0.2-3",
+  "version": "2.0.3",
   "description": "CachedImage component for react-native",
   "main": "index.js",
   "scripts": {
