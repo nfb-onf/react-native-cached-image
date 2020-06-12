@@ -78,7 +78,7 @@ class CachedImage extends React.Component {
         this.renderLoader = this.renderLoader.bind(this);
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this._isMounted = true;
 
         this.addOrRemoveNetInfoListener = NetInfo.addEventListener(this.handleConnectivityChange);
